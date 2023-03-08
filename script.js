@@ -1,6 +1,7 @@
 //Quiz questions
 const questions = [
   {
+    //a humble amount of trolling (this is a change! :D)
     question: "What does CSS stand for?",
     a: "Coding Summer/Spring School",
     b: "Coding Style Sheets",
