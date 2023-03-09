@@ -2,28 +2,49 @@
 const questions = [
   {
     //a humble amount of trolling (this is a change! :D)
-    question: "What does CSS stand for?",
-    a: "Coding Summer/Spring School",
-    b: "Coding Style Sheets",
-    c: "Cascading Simple Sheets",
-    d: "Cars SUVs & Sailboats",
-    correct: "a",
+    question: "What language is used to write kernels in Windows?",
+    a: "Python",
+    b: "HTML",
+    c: "JavaScript",
+    d: "TypeScript",
+    e: "C",
+    correct: "e",
   },
   {
-    question: "When was Coding Summer/Spring School founded?",
-    a: "2018",
-    b: "2021",
-    c: "2022",
-    d: "2023",
-    correct: "b",
+    question: "Which of these OS is NOT unix based?",
+    a: "Linux",
+    b: "Solaris",
+    c: "IBM",
+    d: "Windows",
+    e: "MacOSX",
+    correct: "d",
   },
   {
-    question: "Which organisation did the Coding Summer/Spring School initially start in?",
-    a: "Bosnia and Herzegovina Famous Foundation",
-    b: "Bosnia and Herzegovina Futures Foundation",
-    c: "Bosnia and Herzegovina Factory Foundation",
-    d: "none of the above",
-    correct: "b",
+    question: "Which of these countries borders Bosnia and Herzegovina?",
+    a: "Germany",
+    b: "India",
+    c: "Serbia",
+    d: "Japan",
+    e: "none of the above",
+    correct: "c",
+  },
+  {
+    question: "Which of these products does Yamaha not produce?",
+    a: "Electric guitars",
+    b: "Grand pianos",
+    c: "Accordions",
+    d: "Boat engines",
+    e: "Electric harp",
+    correct: "e",
+  },
+  {
+    question: "Which of these is the most popular/mainstreamed Adobe product?",
+    a: "Flash/Animate",
+    b: "InDesign",
+    c: "Photoshop",
+    d: "Illustrator",
+    e: "After Effects",
+    correct: "c",
   },
 ];
 
@@ -35,6 +56,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -64,6 +86,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
